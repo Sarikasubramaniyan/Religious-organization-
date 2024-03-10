@@ -1,0 +1,454 @@
+:root{
+  --granite-gray: hsl(0, 0%, 40%);
+  --go-green_50: hsla(0, 0%, 0%, 0.5);
+  --go-green_8: hsla(145, 63%, 42%, 0.08);
+  --go-green_5: hsla(145, 63%, 42%, 0.05);
+  --light-gray: hsl(0, 0%, 80%);
+  --mint-cream: hsl(160, 100%, 98%);
+  --cultured: hsl(0, 0%, 93%);
+  --go-green: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+}
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*part1 home*/
+.grid{
+margin-top: 20px;
+width: 100%;
+height: 100vh;
+background: url(/src/img/02.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color:black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.nav .logo h1{
+  font-family: sans-serif;
+  color:white;
+  padding-left: 40px;
+  font-size: 40px;
+}
+
+.nav .logo b{
+  color: rgb(245, 245, 15);
+  margin-left: 10px;
+}
+.nav ul{
+  display: flex;
+  list-style: none;
+  margin-left: 300px;
+}
+.nav ul li{
+  margin-right: 30px;
+}
+.nav ul li a{
+  text-decoration:none;
+  color: white;
+  font-weight: 700;
+  font-family: arial;
+  padding-left: 40px;
+  font-size: 17px;
+  cursor: pointer; 
+}
+.content {
+  display: grid;
+  gap: 30px;
+  margin-top:0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  grid-template-columns: auto 50%;
+}
+
+.content-left,
+.content-right,
+.content-centre {
+  max-width: 100%;
+}
+
+.content .content-left{
+  display: block;
+  width: 100%;
+}
+.content .content-left .info{
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.content .content-left .info h2{
+  font-size: 40px;
+  font-family:sans-serif;
+  margin-top: 250px;
+  margin-bottom: 30px;
+  color:  rgb(233, 233, 112);
+  background-color: #181717;
+  padding-left: 60px;
+}
+.content .content-left .info p{
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  color:  rgb(233, 233, 112);
+  background-color: #0f0f0f;
+  padding-left: 60px;
+}
+.content .content-left button {
+  margin-left: 60px;
+  padding: 10px 25px;
+  background-color: rgb(233, 233, 112);
+  color: black;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+/*part2 about*/
+/*
+.grad{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(245, 245, 15);
+}
+.content .content-right{
+  display: block;
+  width: 100%;
+}
+.content .content-right .info{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content .content-right .info h2{
+  font-size: 50px;
+  text-align: left;
+  align-items: center;
+  font-family:sans-serif;
+  margin-top: 150px;
+  margin-bottom: 10px;
+  color: black;
+}
+.content .content-right .info h1{
+  font-size: 30px;
+  color: white;
+  margin-top: 10px;
+}
+.content .content-right .info ul{
+  font-size: 20px;
+  font-family: cuprum;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: black;
+  padding-left: 60px;
+}
+.content .img {
+  width: 85;
+  max-width: 90%;
+  height:auto;
+  margin-top: 40px; 
+  margin-left: 80px;
+}
+*/
+.grad {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/src/img/dd ");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px; /* Adjusted padding */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.content-right .info h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 0; /* Removed margin-top */
+  margin-bottom: 10px;
+  color: black;
+}
+
+.content-right .info h1 {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+.content-right .info ul {
+  font-size: 16px;
+  font-family: cuprum;
+  margin-top: 20px;
+  color: black;
+  padding-left: 20px;
+}
+
+/*part3 donation*/
+
+
+.grbd {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  background-color: rgb(245, 172, 15);
+}
+
+.grbd .donate {
+  width: 80%; /* Adjust width as needed */
+  max-width: 1200px; /* Add max-width for responsiveness */
+  padding: 20px; /* Add padding for space around the cards */
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  align-items: center; /* Center horizontally */
+  background-color: rgb(245, 172, 15);
+}
+
+.grbd .donate h3,
+.grbd .donate h2,
+.grbd .donate h4 {
+  font-size: 25px; /* Adjust font size as needed */
+  color: var(--go-green);
+  font-weight: 600;
+  font-family: sans-serif;
+  text-align: center; /* Center text */
+  margin-bottom: 20px; /* Add space between elements */
+}
+
+.grbd .card-list {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Add space between cards */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+}
+
+.grbd .card-list .card {
+  width: 300px; /* Adjust card width as needed */
+  padding: 15px;
+  border-radius: 10px;
+  background-color: var(--mint-cream);
+  outline: 2px solid gray;
+}
+
+.grbd .card-list .card .food-title h1 {
+  font-size: 20px; /* Adjust font size as needed */
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  font-family: sans-serif;
+}
+
+.grbd .card-list .card .desc-food {
+  font-size: 15px; /* Adjust font size as needed */
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: arial;
+}
+
+.grbd .card-list .card .price {
+  display: flex;
+  justify-content: center; /* Center the button */
+}
+
+.grbd .card-list .card .price button {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px; /* Adjust font size as needed */
+  margin-top: 10px; /* Add space above the button */
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.grbd .card-list .card .price button i {
+  margin-left: 8px;
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.grbd .card-list .card .price button:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}
+
+
+
+/*part4 events */
+
+.grcd .card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: 40px auto; /* Center the grid */
+  justify-content: center; /* Center the items */
+}
+
+.grcd .card {
+  width: 80%;
+  height: 180px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  background: white;
+  outline: 2px solid var(--light-gray);
+}
+
+.grcd .card:hover {
+  background-color: var(--light-gray);
+  color: black;
+  border: 2px solid black;
+  background-image: url("/src/img/dd ");
+}
+
+.grcd .card .food-title {
+   background-image: url("/src/img/dd ");
+  padding: 10px 0 10px;
+  color: black;
+}
+
+.grcd .card .food-title h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: arial;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.grcd .card .desc-food p {
+  font-size: 13px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.grcd .card .desc-food {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 550;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+/* part5 contact*/
+.grud {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.grud .list {
+  display: flex;
+   /* Allow contents to wrap to the next line */
+  justify-content: space-around;
+  width: 100%;
+  background-image: url("/src/img/dd ");
+  /*background-color: rgb(245, 172, 15);*/
+  padding: 20px 0;
+}
+
+.grud .temple {
+  text-align: left;
+  width: calc(50% - 20px); /* Adjust width as needed */
+  max-width: 400px;
+  margin: 0 10px; /* Add margin for space between sections */
+}
+
+.grud h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  
+}
+
+.grud h2 {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.temple .icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.temple .icon img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.temple .websites .icon {
+  margin-top: 10px;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.websites .icon img:hover {
+  transform: scale(1.2);
+}
+ 
+
+footer {
+  margin-top:0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 20px;
+}
+
+
